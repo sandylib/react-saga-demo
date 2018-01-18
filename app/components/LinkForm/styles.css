@@ -1,20 +1,27 @@
-.login { /* stylelint-disable */
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    overflow-x: hidden;
+}
+.linkForm { /* stylelint-disable */
     background-color: #fff;
-    box-shadow: rgba(0,0,0,0.12) 0px 1px 6px, rgba(0,0,0,0.12) 0px 1px 4px;
     padding: 25px;
     width: 320px;
     border-radius: 2px;
-    margin: 100px auto;
+    pointer-events: fixed;
+    margin-top: 25%;
+    margin-left: 30%;
 }
 
 .heading {
     font-size: 22px;
     color: #222;
     margin-bottom: 20px;
-}
-
-.input:focus {
-    outline: none;
 }
 
 .actionContainer {
@@ -33,4 +40,8 @@
 .button:hover {
     background-color: rgba(0,0,0,0.05);
     font-weight: 700;
+}
+.input {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
